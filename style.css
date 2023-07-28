@@ -13,7 +13,7 @@ body {
 }
 
 
-footer{
+footer {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -26,22 +26,23 @@ footer{
     flex-direction: column;
 }
 
-.logo{
+.logo {
     margin-top: 50px;
     height: 80px;
     margin-bottom: 1rem;
 }
 
-.social-icons-container, .footer-menu-container{
+.social-icons-container,
+.footer-menu-container {
 
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
-     margin-bottom: 1rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
-.social-icon{
+.social-icon {
     height: 50px;
     width: 50px;
     border-radius: 50px;
@@ -54,47 +55,134 @@ footer{
 
 }
 
-.social-icon:hover{
+.social-icon:hover {
     background-color: #121212;
     filter: invert(1);
 }
 
 
-.social-icon:nth-of-type(2){
+.social-icon:nth-of-type(2) {
     background-image: url(Resources/InstagramBlanco.png);
 
 }
 
-.social-icon:nth-of-type(3){
+.social-icon:nth-of-type(3) {
     background-image: url(Resources/TwitterBlanco.png);
 
 }
 
-.footer-menu-container{
+.footer-menu-container {
     list-style-type: none;
     color: #f2f2f2;
     font-size: 18px;
 }
 
-.menu-item{
-    margin: 1rem 1,5rem;
+.menu-item {
+    margin: 1rem 1, 5rem;
     cursor: pointer;
     opacity: 0.6;
 }
 
-.menu-item:hover{
+.menu-item:hover {
     opacity: 1;
 }
 
-.copyright{
+.copyright {
     color: #f2f2f2;
     opacity: 0.3;
     text-align: center;
 }
 
+/*Catalogo*/
+.btn-link {
+    text-decoration: none;
+}
+
+.btn-dark-ol {
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-dark-ol:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.product-catalogo {
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.custom-img-margin {
+    margin-left: 5%; 
+    margin-right: 5%;
+}
+/*Catalogo*/
 
 
+/*Producto Estrellas*/
 
+.producto-container {
+    padding: 15px;
+  }
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .rate {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    cursor: pointer;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+.form-stars{
+    display: flex;
+    justify-content: center;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+/*Producto Estrellas*/
 
 .section-padding {
     padding: 70px 0px;
@@ -131,13 +219,13 @@ footer{
 
 
 @media (max-width: 767px) {
-    
+
     .custom-img {
         margin-left: auto;
         margin-right: auto;
 
 
-    }  
+    }
 
 }
 
@@ -146,67 +234,65 @@ footer{
 
 
 
-        nav {
+nav {
 
-            display: flex;
-            align-items: first baseline;
-            justify-content: space-between;
-            padding-top: 25px;
-            padding-left: 2%;
-            padding-right: 2%;
-            font-weight: bold;
-
-
-
-        }
-
-
-        header{
-            
-        }
-
-        h1 {
-            color: blue;
-            font-size: 40px;
-            justify-content: left;
-        }
-
-        ul li {
-            
-            display: inline-block;
-            padding: 0px 15px;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: blue;
-        }
-
-
-        
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: bold;
 
 
 
-        .image-with-text {
-            overflow: hidden;
-            /* Para evitar que los elementos se desborden */
-        }
+}
 
-        .image-with-text img {
-            float: left;
-            /* Alinea la imagen a la izquierda */
-            margin-right: 10px;
-            /* Agrega un margen derecho para separar la imagen del texto */
-        }
 
-        .image-with-text .text {
-            margin-left: 10px;
-            /* Agrega un margen izquierdo para separar el texto de la imagen */
-        }
+header {}
+
+h1 {
+    color: blue;
+    font-size: 40px;
+    justify-content: left;
+}
+
+ul li {
+
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+
+
+
+
+.image-with-text {
+    overflow: hidden;
+    /* Para evitar que los elementos se desborden */
+}
+
+.image-with-text img {
+    float: left;
+    /* Alinea la imagen a la izquierda */
+    margin-right: 10px;
+    /* Agrega un margen derecho para separar la imagen del texto */
+}
+
+.image-with-text .text {
+    margin-left: 10px;
+    /* Agrega un margen izquierdo para separar el texto de la imagen */
+}
 
 
 
@@ -214,31 +300,31 @@ footer{
 
 
 
-        .container-express {
-            display: flex;
-        }
+.container-express {
+    display: flex;
+}
 
-        .content-express {
-            display: flex;
-            align-items: center;
-        }
+.content-express {
+    display: flex;
+    align-items: center;
+}
 
-        .text-express {
-            margin-left: 10px;
-        }
+.text-express {
+    margin-left: 10px;
+}
 
-        .rectangles-express {
-            display: flex;
-            flex-direction: row;
-            /* Coloca los rectángulos en horizontal */
-        }
+.rectangles-express {
+    display: flex;
+    flex-direction: row;
+    /* Coloca los rectángulos en horizontal */
+}
 
-        .rectangle-exp {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            margin-right: 20px;
-            margin-top: 10px;
-            margin-left: 10px;
-            border-radius: 3%;
-        }
+.rectangle-exp {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 3%;
+}
