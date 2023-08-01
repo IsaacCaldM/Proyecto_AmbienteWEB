@@ -328,3 +328,18 @@ a:hover {
     margin-left: 10px;
     border-radius: 3%;
 }
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    background-color: rgb(194, 206, 218);
+  }
+
+  @media (min-width: 768px) {
+    .container-1 {
+
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
